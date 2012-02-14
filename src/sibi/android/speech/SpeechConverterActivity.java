@@ -123,6 +123,9 @@ public class SpeechConverterActivity extends Activity implements TextToSpeech.On
 		// TODO Auto-generated method stub
 		long selected_position = lang.getSelectedItemId();
 		position = (int) selected_position;
+		Locale[] locale = Locale.getAvailableLocales();		
+		Toast toast = Toast.makeText(getApplicationContext(), locale[(int) position].getDisplayLanguage() , Toast.LENGTH_SHORT);
+		toast.show();
 		
 		//mTts.setLanguage(locale	);
 		
