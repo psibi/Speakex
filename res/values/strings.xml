@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, SpeechConverterActivity!</string>
     <string name="app_name">Speech Converter</string>
+    <string name="speak">Speak</string>
 
 </resources>
