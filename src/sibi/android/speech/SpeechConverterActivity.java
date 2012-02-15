@@ -1,14 +1,11 @@
 package sibi.android.speech;
 
-import java.util.Arrays;
 import java.util.Locale;
 
 import android.app.Activity;
-import android.app.LocalActivityManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.speech.tts.TextToSpeech.OnInitListener;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -48,7 +45,7 @@ public class SpeechConverterActivity extends Activity implements TextToSpeech.On
         }
        
         
-        ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, langs);
+        ArrayAdapter<Object> spinnerArrayAdapter = new ArrayAdapter<Object>(this, android.R.layout.simple_spinner_item, langs);
         lang.setAdapter(spinnerArrayAdapter);
     
         lang.setOnItemSelectedListener(this);
